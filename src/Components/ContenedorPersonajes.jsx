@@ -8,5 +8,5 @@ const ContenedorPersonajes = (nombrePersonaje, foto) => {
     </div>
   )
 } 
-   
+    
 export default ContenedorPersonajes
