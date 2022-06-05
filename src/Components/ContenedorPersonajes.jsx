@@ -7,6 +7,6 @@ const ContenedorPersonajes = (nombrePersonaje, foto) => {
         <h1>{nombrePersonaje}</h1>
     </div>
   )
-}
+} 
 
 export default ContenedorPersonajes
