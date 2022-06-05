@@ -169,17 +169,17 @@ const Formulario = () => {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center row justify-content-center mb-5 colortexto">Personajes MARVEL</h1>
+      <h1 className="text-center row justify-content-center mb-5 colortexto animate__fadeInLeft animate__delay-5s">Personajes MARVEL</h1>
 
       <div className="formularioEmpleados row">
-        <h5>Bienvenido. Mira cuál es el personaje cuyo nombre es parecido al tuyo!</h5>
-        <h6>Para conocer tu personaje digita tu nombre.</h6>
+        <h5 className="">Bienvenido. Mira cuál es el personaje cuyo nombre es parecido al tuyo!</h5>
+        <h6 className="">Para conocer tu personaje digita tu nombre.</h6>
         <div className="col-12 justify-content-end ladoCajas">
           <form onSubmit={modoEdicion ? editarEmpleado : guardarEmpleado} className="text-center">
             {
               error ? <span className="text-danger">{error}</span> : null
             }
-            <input className="txt mb-2" type="text" placeholder=""
+            <input className="txt mb-2 animate__animated animate__fadeInLeft" type="text" placeholder=""
               onChange={(e) => setNombre(e.target.value)}
               value={nombre}
             />
@@ -193,7 +193,7 @@ const Formulario = () => {
                 )
                 :
                 <>
-                  <button className="boton-agregar" type="submit">Obtener mi personaje</button>
+                  <button className="boton-agregar animate__animated animate__fadeInRight" type="submit">Obtener mi personaje</button>
                 </>
 
             }
